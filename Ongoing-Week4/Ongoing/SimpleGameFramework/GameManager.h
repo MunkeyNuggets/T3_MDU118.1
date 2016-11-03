@@ -32,6 +32,8 @@ public:
 private:
 	GameManager();
 	~GameManager();
+
+	std::vector<GameObject*> objects;
 };
 
 /**

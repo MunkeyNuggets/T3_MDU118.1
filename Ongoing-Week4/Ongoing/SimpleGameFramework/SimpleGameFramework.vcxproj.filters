@@ -93,18 +93,6 @@
     <ClInclude Include="Actor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerBlockers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerInteractives.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerPickUps.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerEnemies.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -126,10 +114,10 @@
     <ClInclude Include="EnergyBoost.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Police.h">
+    <ClInclude Include="Birds.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Birds.h">
+    <ClInclude Include="Police.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -170,18 +158,6 @@
     <ClCompile Include="Actor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerBlockers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerInteractives.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerPickUps.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerEnemies.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Car.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -203,10 +179,10 @@
     <ClCompile Include="EnergyBoost.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Police.cpp">
+    <ClCompile Include="Birds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Birds.cpp">
+    <ClCompile Include="Police.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

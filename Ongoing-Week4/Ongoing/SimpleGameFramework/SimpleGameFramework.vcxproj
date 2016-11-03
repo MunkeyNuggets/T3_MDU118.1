@@ -125,10 +125,6 @@
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="HealthPack.h" />
     <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="PlayerBlockers.h" />
-    <ClInclude Include="PlayerEnemies.h" />
-    <ClInclude Include="PlayerInteractives.h" />
-    <ClInclude Include="PlayerPickUps.h" />
     <ClInclude Include="Police.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -155,10 +151,6 @@
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="HealthPack.cpp" />
     <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="PlayerBlockers.cpp" />
-    <ClCompile Include="PlayerEnemies.cpp" />
-    <ClCompile Include="PlayerInteractives.cpp" />
-    <ClCompile Include="PlayerPickUps.cpp" />
     <ClCompile Include="Police.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

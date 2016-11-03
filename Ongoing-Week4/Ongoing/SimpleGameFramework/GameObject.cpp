@@ -1,4 +1,4 @@
- #include "stdafx.h"
+#include "stdafx.h"
 #include "GameObject.h"
 
 
@@ -12,16 +12,22 @@ GameObject::~GameObject()
 {
 }
 
-void GameObject::SaveAsText_Internal(std::ostream& outputStream)
-{
-	// Save any child specific info
-	// If saving out info MUST ADD IN LEADING COMMA!
-	// DO NOT ADD END OF LINE CHARACTER HERE!
-}
+//void GameObject::SaveAsText_Internal(std::ostream& outputStream)
+//{
+//	// Save any child specific info
+//	// If saving out info MUST ADD IN LEADING COMMA!
+//	// DO NOT ADD END OF LINE CHARACTER HERE!
+//}
+//
+//void GameObject::LoadFromText_Internal(std::istream& inputStream)
+//{
+//	// load any child specific info
+//}
 
-void GameObject::LoadFromText_Internal(std::istream& inputStream)
+void GameObject::Render(Gdiplus::Graphics& canvas, const CRect& clientRect)
 {
-	// load any child specific info
+	GameFrameworkInstance.DrawCircle(canvas, location, 50, true, 
+									 Gdiplus::Color::AliceBlue);
 }
 
 void GameObject::SaveAsText(std::ostream& outputStream)
@@ -40,11 +46,6 @@ void GameObject::SaveAsText(std::ostream& outputStream)
 
 void GameObject::LoadFromText(std::istream& inputStream)
 {
-	// read the enumeration into a integer then cast/convert it to the enum
-	int typeValue;
-	inputStream >> typeValue;
-	type = (GameObjectType)typeValue;
-
 	char dummyValue;
 	// consume/skip over the comma
 	inputStream >> dummyValue;

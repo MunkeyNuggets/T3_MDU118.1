@@ -1,1 +1,12 @@
-0,Object1,50,100,Image1,1,2,3
+1
+10
+1,Object1,50,100,Image1,1,2,3,100
+5,BananaPeel,100,500,bananaPeel,1,1,1,5
+9,Birds,30,50,birds,1,1,1,5
+2,Car,300,100,car,1,1,1,1,1
+8,EnergyBoost,20,100,energyBoost,1,1,1,5,3,1
+4,FireHydrant,100,100,fireHydrant,1,1,1,1,1
+6,FumeCloud,50,100,fumeCloud,1,1,1,5
+7,HealthPack,500,500,healthPack,1,10,1,5,3,1
+10,Police,50,250,police,1,1,1,5
+3,StreetLight,100,250,streetLight,1,1,1,1,1

@@ -1,10 +1,18 @@
 #pragma once
-#include "PlayerBlockers.h"
+#include "GameObject.h"
 class FireHydrant :
-	public PlayerBlockers
+	public GameObject
 {
 public:
 	FireHydrant();
 	virtual ~FireHydrant();
+
+protected:
+	virtual void SaveAsText_Internal(std::ostream& outputStream);
+	virtual void LoadFromText_Internal(std::istream& inputStream);
+
+public:
+	float width;
+	float height;
 };
 
