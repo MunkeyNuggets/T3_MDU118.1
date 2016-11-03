@@ -4,6 +4,7 @@
 #include <string>
 
 enum GameObjectType {
+	//create different class types
 	egotBase,
 	egotActor,
 	egotCar,
@@ -28,7 +29,6 @@ public:
 
 	virtual void SaveAsText(std::ostream& outputStream);
 	virtual void LoadFromText(std::istream& inputStream);
-
 	virtual void Render(Gdiplus::Graphics& canvas, const CRect& clientRect);
 
 	bool operator == (const GameObject& rhs)
@@ -47,6 +47,7 @@ protected:
 	virtual void SaveAsText_Internal(std::ostream& outputStream) = 0;
 	virtual void LoadFromText_Internal(std::istream& inputStream) = 0;
 
+	//list commen variables between child classes
 public:
 	GameObjectType type;
 	Vector2i location;

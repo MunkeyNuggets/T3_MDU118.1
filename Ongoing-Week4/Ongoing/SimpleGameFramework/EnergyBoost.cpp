@@ -12,6 +12,7 @@ EnergyBoost::~EnergyBoost()
 {
 }
 
+//save child specific variables "radius", "amount" and "destructible"
 void EnergyBoost::SaveAsText_Internal(std::ostream& outputStream)
 {
 	outputStream << "," << radius
@@ -19,6 +20,7 @@ void EnergyBoost::SaveAsText_Internal(std::ostream& outputStream)
 		<< "," << destructible;
 }
 
+//load child specific variables "radius", "amount" and "destructible"
 void EnergyBoost::LoadFromText_Internal(std::istream& inputStream)
 {
 	char dummyChar;
@@ -26,3 +28,11 @@ void EnergyBoost::LoadFromText_Internal(std::istream& inputStream)
 		>> dummyChar >> amount
 		>> dummyChar >> destructible;
 }
+
+void EnergyBoost::Render(Gdiplus::Graphics& canvas, const CRect& clientRect)
+{
+	//get image called "energyBoost" and render to canvas at it's unique location
+	ImageWrapper* energyBoost = GameFrameworkInstance.GetLoadedImage("energyBoost");
+	GameFrameworkInstance.DrawImage(canvas, location, energyBoost);
+}
+

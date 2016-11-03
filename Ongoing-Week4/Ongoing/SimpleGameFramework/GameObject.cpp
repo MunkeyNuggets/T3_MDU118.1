@@ -24,12 +24,13 @@ GameObject::~GameObject()
 //	// load any child specific info
 //}
 
+//create the render funtion to be used for child classes
 void GameObject::Render(Gdiplus::Graphics& canvas, const CRect& clientRect)
 {
-	GameFrameworkInstance.DrawCircle(canvas, location, 50, true, 
-									 Gdiplus::Color::AliceBlue);
+	
 }
 
+//set up the SaveAsTeaxt function
 void GameObject::SaveAsText(std::ostream& outputStream)
 {
 	outputStream	<< type			<< ","
@@ -44,6 +45,7 @@ void GameObject::SaveAsText(std::ostream& outputStream)
 	outputStream	<< std::endl;
 }
 
+//set up the LoadFromText function
 void GameObject::LoadFromText(std::istream& inputStream)
 {
 	char dummyValue;
